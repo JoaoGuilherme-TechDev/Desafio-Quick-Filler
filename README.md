@@ -57,15 +57,27 @@ npm run cartao
 Os arquivos .xlsx gerados serão salvos em src/output/.
 
 📂 Estrutura do projeto
+
 Desafio-Quick-Filler/
+
 ├── src/
+
 │   ├── input/          # PDFs de entrada
+
 │   ├── output/         # Planilhas .xlsx geradas
+
 │   └── parsers/
+
 │       ├── payroll.js  # Parser para holerites
+
 │       └── time_card.js # Parser para cartões de ponto
+
 ├── package.json        # Dependências e scripts
+
 ├── package-lock.json
+
 ├── eng.traineddata     # OCR em inglês
+
 ├── por.traineddata     # OCR em português
+
 └── README.md
