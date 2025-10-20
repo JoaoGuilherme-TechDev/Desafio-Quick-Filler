@@ -129,8 +129,8 @@ for (const holerite of holerites) {
  
   }
 
+   // Define o caminho de saída para salvar o arquivo Excel
   const outputFolder = './src/output';
-  
   const outputPath = path.join(outputFolder, `${path.basename(holerite)}.xlsx`);
 
   XLSX.writeFile(workbook, outputPath)

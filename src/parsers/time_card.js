@@ -79,12 +79,13 @@ for (const ponto of pontos) {
     const worksheet = XLSX.utils.json_to_sheet(dados);
 
     
-
+  // Converte os dados (JSON) para formato de planilha  
     workbook.SheetNames.push(nomeAba);
     workbook.Sheets[nomeAba] = worksheet;
   }
-  const outputFolder = './src/output';
 
+  // Define o caminho de saída para salvar o arquivo Excel
+  const outputFolder = './src/output';
   const outputPath = path.join(outputFolder, `${path.basename(ponto)}.xlsx`);
 
   XLSX.writeFile(workbook, outputPath  )
